@@ -1228,4 +1228,41 @@ void LangManager::loadArabicDialogs() {
     m_ar["customize_theme"]                   = "تخصيص الثيم";
     m_ar["svg_icon_mode"]                     = "وضع أيقونات SVG";
     m_ar["svg_icon_mode_hint"]                = "اختر لون الأيقونات: Light (أسود) أو Dark (أبيض) أو Custom (لون مخصص). يؤثر على جميع الأيقونات في البرنامج.";
+    
+    // Password Reset Dialog
+    m_ar["forgot_password_title"]             = "نسيت كلمة المرور";
+    m_ar["enter_your_email"]                  = "أدخل بريدك الإلكتروني";
+    m_ar["email_recovery_desc"]               = "سنرسل لك رمز تحقق على بريدك الإلكتروني.";
+    m_ar["email_address"]                     = "البريد الإلكتروني";
+    m_ar["send_verification_code"]            = "إرسال رمز التحقق";
+    m_ar["sending"]                           = "جاري الإرسال...";
+    m_ar["invalid_email_format"]              = "البريد الإلكتروني غير صحيح";
+    m_ar["please_wait_seconds"]               = "الرجاء الانتظار %1 ثانية قبل المحاولة مرة أخرى";
+    m_ar["network_error"]                     = "خطأ في الاتصال بالإنترنت";
+    m_ar["otp_sent_generic_message"]          = "تم إرسال رمز التحقق! تحقق من بريدك الإلكتروني.";
+    m_ar["enter_verification_code"]           = "أدخل رمز التحقق";
+    m_ar["otp_sent_desc"]                     = "لقد أرسلنا رمزاً مكوناً من 6 أرقام إلى بريدك الإلكتروني.";
+    m_ar["verification_code"]                 = "رمز التحقق";
+    m_ar["verify_code"]                       = "تحقق من الرمز";
+    m_ar["verifying"]                         = "جاري التحقق...";
+    m_ar["resend_code"]                       = "إعادة إرسال الرمز";
+    m_ar["otp_must_be_6_digits"]              = "الرمز يجب أن يكون 6 أرقام";
+    m_ar["incorrect_otp_remaining"]           = "الرمز غير صحيح. محاولات متبقية: %1";
+    m_ar["otp_attempts_exhausted"]            = "تم استنفاد كل المحاولات. الرجاء إعادة إرسال رمز جديد.";
+    m_ar["remaining_attempts"]                = "المحاولات المتبقية: %1";
+    m_ar["time_remaining"]                    = "الوقت المتبقي: %1:%2";
+    m_ar["otp_expired"]                       = "انتهت صلاحية الرمز";
+    m_ar["please_wait"]                       = "الرجاء الانتظار";
+    m_ar["set_new_password"]                  = "تعيين كلمة مرور جديدة";
+    m_ar["new_password_desc"]                 = "أدخل كلمة المرور الجديدة (لا تقل عن 8 أحرف).";
+    m_ar["new_password"]                      = "كلمة المرور الجديدة";
+    m_ar["min_8_chars"]                       = "8 أحرف على الأقل";
+    m_ar["confirm_password"]                  = "تأكيد كلمة المرور";
+    m_ar["retype_password"]                   = "أعد كتابة كلمة المرور";
+    m_ar["reset_password"]                    = "إعادة تعيين كلمة المرور";
+    m_ar["password_required"]                 = "كلمة المرور مطلوبة";
+    m_ar["password_min_8_chars"]              = "كلمة المرور يجب أن تكون 8 أحرف على الأقل";
+    m_ar["passwords_dont_match"]              = "كلمة المرور غير متطابقة";
+    m_ar["password_reset_failed"]             = "فشل إعادة تعيين كلمة المرور";
+    m_ar["password_reset_success"]            = "تم إعادة تعيين كلمة المرور بنجاح! يمكنك الآن تسجيل الدخول.";
 }

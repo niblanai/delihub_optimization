@@ -9,6 +9,8 @@
 #include <QTimer>
 #include "data/irepositories.h"
 
+class QNetworkAccessManager;
+
 class ForgotPasswordDialog : public QDialog {
     Q_OBJECT
 public:
@@ -25,9 +27,6 @@ private slots:
     
     // Step 3: Password reset
     void onResetPassword();
-    
-    // Email sending response
-    void onEmailSent(bool success, const QString& message);
 
 private:
     void setupUi();
@@ -38,6 +37,7 @@ private:
     void stopTimer();
 
     IUserRepository* m_userRepo;
+    QNetworkAccessManager* m_networkManager;
     
     // UI Components
     QStackedWidget* m_stackedWidget;
@@ -66,6 +66,7 @@ private:
     // Data
     QString m_email;
     int m_userId;
+    int m_remainingAttempts;
     
     // Rate limiting
     QDateTime m_lastOtpRequestTime;

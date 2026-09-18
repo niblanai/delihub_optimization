@@ -1,6 +1,4 @@
 #include "forgot_password_dialog.h"
-#include "services/brevo_email_service.h"
-#include "services/otp_manager.h"
 #include "services/auth_service.h"
 #include "services/lang_manager.h"
 #include "infra/config_manager.h"
@@ -9,11 +7,18 @@
 #include <QFormLayout>
 #include <QMessageBox>
 #include <QRegularExpression>
+#include <QNetworkAccessManager>
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QUrlQuery>
 
 ForgotPasswordDialog::ForgotPasswordDialog(IUserRepository* userRepo, QWidget* parent)
     : QDialog(parent)
     , m_userRepo(userRepo)
     , m_userId(0)
+    , m_networkManager(new QNetworkAccessManager(this))
 {
     setupUi();
     showStep(0);
@@ -202,62 +207,76 @@ void ForgotPasswordDialog::onRequestOtp() {
         }
     }
     
-    // Check if user exists (without revealing if they don't)
+    // Check if user exists
     User user = m_userRepo->getByEmail(m_email);
-    
-    // For security: always show success message even if email doesn't exist
-    // This prevents user enumeration attacks
+    if (user.id() > 0) {
+        m_userId = user.id();
+    } else {
+        // For security: show generic error without revealing if email exists
+        m_emailStatusLabel->setText(LangManager::tr("invalid_email_format"));
+        m_emailStatusLabel->setVisible(true);
+        return;
+    }
     
     // Disable button during processing
     m_requestBtn->setEnabled(false);
     m_requestBtn->setText(LangManager::tr("sending"));
     
-    // Generate OTP
-    QString otp = OtpManager::instance().generateOtp(m_email);
+    // Send OTP request to Cloudflare Worker
+    QUrl url("https://erp-password-recovery.hosamwork2003.workers.dev/request-reset");
+    QNetworkRequest request(url);
+    request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
     
-    // If user exists, save their ID for later password reset
-    if (user.id() > 0) {
-        m_userId = user.id();
-    }
+    QJsonObject json;
+    json["email"] = m_email;
     
-    // Send OTP via Brevo
-    auto* brevoService = new BrevoEmailService(this);
-    connect(brevoService, &BrevoEmailService::emailSent,
-            this, &ForgotPasswordDialog::onEmailSent);
+    QNetworkReply* reply = m_networkManager->post(request, QJsonDocument(json).toJson());
     
-    brevoService->sendPasswordRecoveryOtp(m_email, otp);
-    
-    m_lastOtpRequestTime = QDateTime::currentDateTime();
+    connect(reply, &QNetworkReply::finished, this, [this, reply]() {
+        m_requestBtn->setEnabled(true);
+        m_requestBtn->setText(LangManager::tr("send_verification_code"));
+        
+        if (reply->error() == QNetworkReply::NoError) {
+            QByteArray response = reply->readAll();
+            QJsonDocument doc = QJsonDocument::fromJson(response);
+            QJsonObject obj = doc.object();
+            
+            if (obj["success"].toBool()) {
+                // Success - move to OTP verification step
+                QMessageBox::information(this, 
+                    LangManager::tr("success"),
+                    LangManager::tr("otp_sent_generic_message"));
+                
+                // Calculate expiration time (10 minutes from now)
+                m_expirationTime = QDateTime::currentDateTime().addSecs(600);
+                m_remainingAttempts = 5;
+                
+                showStep(1);
+                startTimer();
+                
+                m_attemptsLabel->setText(
+                    LangManager::tr("remaining_attempts").arg(m_remainingAttempts));
+                
+                m_lastOtpRequestTime = QDateTime::currentDateTime();
+            } else {
+                // Error from worker
+                QString errorMsg = obj["error"].toString();
+                m_emailStatusLabel->setText(errorMsg);
+                m_emailStatusLabel->setVisible(true);
+                Logger::instance().error("Worker error: " + errorMsg);
+            }
+        } else {
+            // Network error
+            QString errorMsg = reply->errorString();
+            m_emailStatusLabel->setText(LangManager::tr("network_error"));
+            m_emailStatusLabel->setVisible(true);
+            Logger::instance().error("Network error: " + errorMsg);
+        }
+        
+        reply->deleteLater();
+    });
 }
 
-void ForgotPasswordDialog::onEmailSent(bool success, const QString& message) {
-    m_requestBtn->setEnabled(true);
-    m_requestBtn->setText(LangManager::tr("send_verification_code"));
-    
-    if (success) {
-        // Generic success message (doesn't reveal if email exists)
-        QMessageBox::information(this, 
-            LangManager::tr("success"),
-            LangManager::tr("otp_sent_generic_message"));
-        
-        // Move to OTP verification step
-        m_expirationTime = OtpManager::instance().getExpirationTime(m_email);
-        showStep(1);
-        startTimer();
-        
-        // Update attempts label
-        int remaining = OtpManager::instance().getRemainingAttempts(m_email);
-        m_attemptsLabel->setText(
-            LangManager::tr("remaining_attempts").arg(remaining));
-    } else {
-        // Show detailed error for debugging (will be removed in production)
-        m_emailStatusLabel->setText(
-            "DEBUG: " + message);  // Show actual error temporarily
-        m_emailStatusLabel->setVisible(true);
-        
-        Logger::instance().error("Failed to send OTP email: " + message);
-    }
-}
 
 void ForgotPasswordDialog::onVerifyOtp() {
     QString enteredOtp = m_otpEdit->text().trimmed();
@@ -268,32 +287,66 @@ void ForgotPasswordDialog::onVerifyOtp() {
         return;
     }
     
-    // Verify OTP
-    bool valid = OtpManager::instance().verifyOtp(m_email, enteredOtp);
+    // Disable button during processing
+    m_verifyBtn->setEnabled(false);
+    m_verifyBtn->setText(LangManager::tr("verifying"));
     
-    if (valid) {
-        // OTP is correct
-        stopTimer();
-        showStep(2);  // Move to password reset step
-    } else {
-        // OTP is incorrect
-        int remaining = OtpManager::instance().getRemainingAttempts(m_email);
+    // Send OTP verification request to Cloudflare Worker
+    QUrl url("https://erp-password-recovery.hosamwork2003.workers.dev/verify-otp");
+    QNetworkRequest request(url);
+    request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+    
+    QJsonObject json;
+    json["email"] = m_email;
+    json["otp"] = enteredOtp;
+    
+    QNetworkReply* reply = m_networkManager->post(request, QJsonDocument(json).toJson());
+    
+    connect(reply, &QNetworkReply::finished, this, [this, reply]() {
+        m_verifyBtn->setEnabled(true);
+        m_verifyBtn->setText(LangManager::tr("verify_code"));
         
-        if (remaining > 0) {
-            m_otpStatusLabel->setText(
-                LangManager::tr("incorrect_otp_remaining").arg(remaining));
-            m_attemptsLabel->setText(
-                LangManager::tr("remaining_attempts").arg(remaining));
+        if (reply->error() == QNetworkReply::NoError) {
+            QByteArray response = reply->readAll();
+            QJsonDocument doc = QJsonDocument::fromJson(response);
+            QJsonObject obj = doc.object();
+            
+            if (obj["success"].toBool()) {
+                // OTP is correct
+                stopTimer();
+                showStep(2);  // Move to password reset step
+            } else {
+                // OTP is incorrect
+                QString errorMsg = obj["error"].toString();
+                int remaining = obj["remainingAttempts"].toInt();
+                
+                m_remainingAttempts = remaining;
+                
+                if (remaining > 0) {
+                    m_otpStatusLabel->setText(
+                        LangManager::tr("incorrect_otp_remaining").arg(remaining));
+                    m_attemptsLabel->setText(
+                        LangManager::tr("remaining_attempts").arg(remaining));
+                } else {
+                    m_otpStatusLabel->setText(LangManager::tr("otp_attempts_exhausted"));
+                    m_verifyBtn->setEnabled(false);
+                    stopTimer();
+                }
+                
+                m_otpStatusLabel->setVisible(true);
+                m_otpEdit->clear();
+                m_otpEdit->setFocus();
+            }
         } else {
-            m_otpStatusLabel->setText(LangManager::tr("otp_attempts_exhausted"));
-            m_verifyBtn->setEnabled(false);
-            stopTimer();
+            // Network error
+            QString errorMsg = reply->errorString();
+            m_otpStatusLabel->setText(LangManager::tr("network_error"));
+            m_otpStatusLabel->setVisible(true);
+            Logger::instance().error("Network error: " + errorMsg);
         }
         
-        m_otpStatusLabel->setVisible(true);
-        m_otpEdit->clear();
-        m_otpEdit->setFocus();
-    }
+        reply->deleteLater();
+    });
 }
 
 void ForgotPasswordDialog::onResendOtp() {
@@ -363,9 +416,6 @@ void ForgotPasswordDialog::onResetPassword() {
     
     // Save updated user
     if (m_userRepo->save(user)) {
-        // Invalidate OTP
-        OtpManager::instance().invalidateOtp(m_email);
-        
         QMessageBox::information(this, 
             LangManager::tr("success"),
             LangManager::tr("password_reset_success"));
