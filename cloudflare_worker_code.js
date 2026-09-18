@@ -5,7 +5,7 @@
  * يخفي API key من الكود المصدري ويوفر Rate Limiting
  * 
  * Worker URL: https://erp-password-recovery.hosamwork2003.workers.dev/
- * KV Namespace: PASSWORD_RESET_KV
+ * KV Namespace Binding: PASSWORD_RESET_KV → Delihub
  * Secret: BREVO_API_KEY
  */
 
