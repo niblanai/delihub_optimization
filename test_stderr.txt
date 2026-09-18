@@ -1,0 +1,96 @@
+[2026-07-23 13:09:16.110] [INFO] Config: Database Type = SQLite
+[2026-07-23 13:09:16.180] [INFO] Config: SQLite Path = :memory:
+[2026-07-23 13:09:16.244] [INFO] Connecting to SQLite Database as configured...
+[2026-07-23 13:09:16.304] [INFO] SQLite Database connected successfully.
+[2026-07-23 13:09:16.360] [INFO] Initializing database schema on driver: QSQLITE
+[2026-07-23 13:09:16.402] [INFO] Table Branches created successfully.
+[2026-07-23 13:09:16.440] [INFO] Table Categories created successfully.
+[2026-07-23 13:09:16.485] [INFO] Table Regions created successfully.
+[2026-07-23 13:09:16.524] [INFO] Table Roles created successfully.
+[2026-07-23 13:09:16.560] [INFO] Table Users created successfully.
+[2026-07-23 13:09:16.596] [INFO] Table Customers created successfully.
+[2026-07-23 13:09:16.634] [INFO] Table CustomerPhones created successfully.
+[2026-07-23 13:09:16.736] [INFO] Table CustomerAddresses created successfully.
+[2026-07-23 13:09:16.806] [INFO] Table Products created successfully.
+[2026-07-23 13:09:16.873] [INFO] Table CustomerFavorites created successfully.
+[2026-07-23 13:09:16.935] [INFO] Table ProductPriceHistory created successfully.
+[2026-07-23 13:09:16.983] [INFO] Table Orders created successfully.
+[2026-07-23 13:09:17.017] [INFO] Table OrderItems created successfully.
+[2026-07-23 13:09:17.058] [INFO] Table ScheduledOrders created successfully.
+[2026-07-23 13:09:17.121] [INFO] Table ScheduledOrderItems created successfully.
+[2026-07-23 13:09:17.192] [INFO] Table MissingProducts created successfully.
+[2026-07-23 13:09:17.255] [INFO] Table AuditLogs created successfully.
+[2026-07-23 13:09:17.292] [INFO] Schema validation and indexing completed successfully.
+[2026-07-23 13:09:17.336] [INFO] Database connection closed.
+[2026-07-23 13:09:17.367] [INFO] Config: Database Type = SQLite
+[2026-07-23 13:09:17.398] [INFO] Config: SQLite Path = :memory:
+[2026-07-23 13:09:17.431] [INFO] Connecting to SQLite Database as configured...
+[2026-07-23 13:09:17.473] [INFO] SQLite Database connected successfully.
+[2026-07-23 13:09:17.510] [INFO] Initializing database schema on driver: QSQLITE
+[2026-07-23 13:09:17.553] [INFO] Table Branches created successfully.
+[2026-07-23 13:09:17.589] [INFO] Table Categories created successfully.
+[2026-07-23 13:09:17.626] [INFO] Table Regions created successfully.
+[2026-07-23 13:09:17.666] [INFO] Table Roles created successfully.
+[2026-07-23 13:09:17.727] [INFO] Table Users created successfully.
+[2026-07-23 13:09:17.791] [INFO] Table Customers created successfully.
+[2026-07-23 13:09:17.850] [INFO] Table CustomerPhones created successfully.
+[2026-07-23 13:09:17.918] [INFO] Table CustomerAddresses created successfully.
+[2026-07-23 13:09:17.988] [INFO] Table Products created successfully.
+[2026-07-23 13:09:18.047] [INFO] Table CustomerFavorites created successfully.
+[2026-07-23 13:09:18.100] [INFO] Table ProductPriceHistory created successfully.
+[2026-07-23 13:09:18.161] [INFO] Table Orders created successfully.
+[2026-07-23 13:09:18.225] [INFO] Table OrderItems created successfully.
+[2026-07-23 13:09:18.264] [INFO] Table ScheduledOrders created successfully.
+[2026-07-23 13:09:18.323] [INFO] Table ScheduledOrderItems created successfully.
+[2026-07-23 13:09:18.391] [INFO] Table MissingProducts created successfully.
+[2026-07-23 13:09:18.447] [INFO] Table AuditLogs created successfully.
+[2026-07-23 13:09:18.484] [INFO] Schema validation and indexing completed successfully.
+[2026-07-23 13:09:18.566] [INFO] Database connection closed.
+[2026-07-23 13:09:18.620] [INFO] Config: Database Type = SQLite
+[2026-07-23 13:09:18.676] [INFO] Config: SQLite Path = :memory:
+[2026-07-23 13:09:18.739] [INFO] Connecting to SQLite Database as configured...
+[2026-07-23 13:09:18.808] [INFO] SQLite Database connected successfully.
+[2026-07-23 13:09:18.868] [INFO] Initializing database schema on driver: QSQLITE
+[2026-07-23 13:09:18.918] [INFO] Table Branches created successfully.
+[2026-07-23 13:09:18.971] [INFO] Table Categories created successfully.
+[2026-07-23 13:09:19.028] [INFO] Table Regions created successfully.
+[2026-07-23 13:09:19.095] [INFO] Table Roles created successfully.
+[2026-07-23 13:09:19.159] [INFO] Table Users created successfully.
+[2026-07-23 13:09:19.218] [INFO] Table Customers created successfully.
+[2026-07-23 13:09:19.276] [INFO] Table CustomerPhones created successfully.
+[2026-07-23 13:09:19.325] [INFO] Table CustomerAddresses created successfully.
+[2026-07-23 13:09:19.395] [INFO] Table Products created successfully.
+[2026-07-23 13:09:19.453] [INFO] Table CustomerFavorites created successfully.
+[2026-07-23 13:09:19.510] [INFO] Table ProductPriceHistory created successfully.
+[2026-07-23 13:09:19.576] [INFO] Table Orders created successfully.
+[2026-07-23 13:09:19.631] [INFO] Table OrderItems created successfully.
+[2026-07-23 13:09:19.670] [INFO] Table ScheduledOrders created successfully.
+[2026-07-23 13:09:19.719] [INFO] Table ScheduledOrderItems created successfully.
+[2026-07-23 13:09:19.790] [INFO] Table MissingProducts created successfully.
+[2026-07-23 13:09:19.833] [INFO] Table AuditLogs created successfully.
+[2026-07-23 13:09:19.871] [INFO] Schema validation and indexing completed successfully.
+[2026-07-23 13:09:19.950] [INFO] Database connection closed.
+[2026-07-23 13:09:19.987] [INFO] Config: Database Type = SQLite
+[2026-07-23 13:09:20.030] [INFO] Config: SQLite Path = :memory:
+[2026-07-23 13:09:20.065] [INFO] Connecting to SQLite Database as configured...
+[2026-07-23 13:09:20.117] [INFO] SQLite Database connected successfully.
+[2026-07-23 13:09:20.157] [INFO] Initializing database schema on driver: QSQLITE
+[2026-07-23 13:09:20.208] [INFO] Table Branches created successfully.
+[2026-07-23 13:09:20.260] [INFO] Table Categories created successfully.
+[2026-07-23 13:09:20.304] [INFO] Table Regions created successfully.
+[2026-07-23 13:09:20.342] [INFO] Table Roles created successfully.
+[2026-07-23 13:09:20.386] [INFO] Table Users created successfully.
+[2026-07-23 13:09:20.429] [INFO] Table Customers created successfully.
+[2026-07-23 13:09:20.479] [INFO] Table CustomerPhones created successfully.
+[2026-07-23 13:09:20.548] [INFO] Table CustomerAddresses created successfully.
+[2026-07-23 13:09:20.589] [INFO] Table Products created successfully.
+[2026-07-23 13:09:20.627] [INFO] Table CustomerFavorites created successfully.
+[2026-07-23 13:09:20.678] [INFO] Table ProductPriceHistory created successfully.
+[2026-07-23 13:09:20.740] [INFO] Table Orders created successfully.
+[2026-07-23 13:09:20.805] [INFO] Table OrderItems created successfully.
+[2026-07-23 13:09:20.872] [INFO] Table ScheduledOrders created successfully.
+[2026-07-23 13:09:20.933] [INFO] Table ScheduledOrderItems created successfully.
+[2026-07-23 13:09:20.982] [INFO] Table MissingProducts created successfully.
+[2026-07-23 13:09:21.029] [INFO] Table AuditLogs created successfully.
+[2026-07-23 13:09:21.070] [INFO] Schema validation and indexing completed successfully.
+[2026-07-23 13:09:21.140] [INFO] Database connection closed.

@@ -1,0 +1,75 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# DeliHub Configuration Template
+# ═══════════════════════════════════════════════════════════════════════════════
+# 
+# This is a TEMPLATE file. The actual config.ini is created on first run.
+# Copy this to config.ini and modify as needed.
+#
+# ⚠️ IMPORTANT: config.ini is in .gitignore and should NEVER be committed!
+#              It may contain passwords and sensitive data.
+# ═══════════════════════════════════════════════════════════════════════════════
+
+[Database]
+type=sqlite
+sqlitePath=database.db
+# For Access database:
+# type=access
+# accessPath=\\\\server\\share\\database.accdb
+
+[Appearance]
+theme=dark
+language=ar
+
+[CustomTheme]
+svgIconMode=dark
+windowBg=#0B1719
+sidebarBg=#111918
+cardBg=#1A2A2E
+cardHover=#243339
+inputBg=#0F1E23
+dialogBg=#0B1719
+border=#2D4550
+borderFocus=#3B82F6
+textPrimary=#E5E7EB
+textSecondary=#9CA3AF
+textDisabled=#6B7280
+textOnPrimary=#FFFFFF
+primary=#3B82F6
+primaryHover=#2563EB
+primaryPressed=#1D4ED8
+success=#10B981
+successBg=#D1FAE5
+warning=#F59E0B
+warningBg=#FEF3C7
+danger=#EF4444
+dangerBg=#FEE2E2
+tableHeaderBg=#1F2937
+tableHeaderText=#F9FAFB
+tableRowAlt=#111918
+tableRowHover=#1F2937
+navBg=#0B1719
+navText=#CBD5E1
+navHover=#1E3A47
+navSelected=#2563EB
+navSelectedText=#FFFFFF
+scrollbarBg=#1A2A2E
+scrollbarHandle=#3B4B55
+scrollbarHandleHover=#4A5A65
+
+[Backup]
+enabled=true
+intervalHours=24
+keepDays=30
+location=backups
+
+[Email]
+# Brevo API settings (optional)
+# apiKey=your_brevo_api_key_here
+# fromEmail=noreply@yourdomain.com
+# fromName=DeliHub System
+
+[Receipt]
+# Receipt printer settings
+# printerName=Default Printer
+paperWidthMm=80
+# templateJson stored separately per branch

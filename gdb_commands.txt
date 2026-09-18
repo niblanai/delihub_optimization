@@ -1,0 +1,10 @@
+set pagination off
+set print pretty on
+set print frame-arguments all
+set print entry-values both
+set logging file C:/Users/Public/gdb_bt_full.txt
+set logging overwrite on
+set logging enabled on
+handle SIGSEGV stop print pass
+handle SIGABRT stop print pass
+run

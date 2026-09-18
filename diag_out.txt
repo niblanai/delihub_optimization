@@ -1,0 +1,6 @@
+Step 1: before QCoreApplication
+Step 2: QCoreApplication created
+Step 3: addDatabase done
+Step 4: db.open succeeded
+Step 5: INSERT OK
+Step 6: DONE

@@ -1,0 +1,13 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/icons/text_style">
+        <file alias="bold.svg">text_style/format-bold-svgrepo-com.svg</file>
+        <file alias="italic.svg">text_style/italic-svgrepo-com.svg</file>
+        <file alias="underline.svg">text_style/underline-svgrepo-com.svg</file>
+        <file alias="strikethrough.svg">text_style/strikethrough-svgrepo-com.svg</file>
+        <file alias="bullet-list.svg">text_style/bullet-list-svgrepo-com.svg</file>
+        <file alias="block-quote.svg">text_style/block-quote-svgrepo-com.svg</file>
+        <file alias="highlight.svg">text_style/highlighting-svgrepo-com.svg</file>
+        <file alias="text-color.svg">text_style/a-svgrepo-com.svg</file>
+    </qresource>
+</RCC>

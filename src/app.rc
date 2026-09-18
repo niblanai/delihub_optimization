@@ -1,0 +1,8 @@
+// Windows resource file
+#include <windows.h>
+
+// Application icon (ID 1)
+1 ICON "logo.ico"
+
+// Manifest
+1 RT_MANIFEST "app.manifest"

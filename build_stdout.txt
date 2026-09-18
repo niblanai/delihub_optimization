@@ -1,0 +1,164 @@
+[1/85] Automatic MOC and UIC for target QXlsx
+[2/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxabstractooxmlfile.cpp.obj
+[3/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxsimpleooxmlfile.cpp.obj
+[4/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/QXlsx_autogen/mocs_compilation.cpp.obj
+[5/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxmediafile.cpp.obj
+[6/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxdatetype.cpp.obj
+[7/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxtheme.cpp.obj
+[8/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxcellrange.cpp.obj
+[9/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxnumformatparser.cpp.obj
+[10/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxabstractsheet.cpp.obj
+[11/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxcellreference.cpp.obj
+[12/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxzipwriter.cpp.obj
+[13/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxzipreader.cpp.obj
+[14/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxcellformula.cpp.obj
+[15/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxdrawing.cpp.obj
+[16/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxcelllocation.cpp.obj
+[17/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxcell.cpp.obj
+[18/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxcontenttypes.cpp.obj
+[19/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxrichstring.cpp.obj
+[20/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxchartsheet.cpp.obj
+[21/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxcolor.cpp.obj
+[22/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxformat.cpp.obj
+[23/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxsharedstrings.cpp.obj
+[24/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxdocpropscore.cpp.obj
+[25/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxdocpropsapp.cpp.obj
+[26/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxdrawinganchor.cpp.obj
+[27/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxdatavalidation.cpp.obj
+[28/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxchart.cpp.obj
+[29/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxworkbook.cpp.obj
+[30/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxrelationships.cpp.obj
+[31/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxutility.cpp.obj
+[32/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxconditionalformatting.cpp.obj
+[33/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxdocument.cpp.obj
+E:/tifany/build/_deps/qxlsx-src/QXlsx/source/xlsxdocument.cpp: In static member function 'static bool QXlsx::DocumentPrivate::copyStyle(const QString&, const QString&)':
+E:/tifany/build/_deps/qxlsx-src/QXlsx/source/xlsxdocument.cpp:477:18: warning: ignoring return value of 'bool QTemporaryFile::open()', declared with attribute 'nodiscard' [-Wunused-result]
+  477 |     tempFile.open();
+      |     ~~~~~~~~~~~~~^~
+In file included from C:/msys64/ucrt64/include/qt6/QtCore/QTemporaryFile:1,
+                 from E:/tifany/build/_deps/qxlsx-src/QXlsx/source/xlsxdocument.cpp:29:
+C:/msys64/ucrt64/include/qt6/QtCore/qtemporaryfile.h:52:32: note: declared here
+   52 |     QFILE_MAYBE_NODISCARD bool open() { return open(QIODevice::ReadWrite); }
+      |                                ^~~~
+[34/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxstyles.cpp.obj
+[35/85] Building CXX object _deps/qxlsx-build/CMakeFiles/QXlsx.dir/source/xlsxworksheet.cpp.obj
+[36/85] Linking CXX static library _deps\qxlsx-build\libQXlsxQt6.a
+[37/85] Automatic MOC and UIC for target DeliHub
+[38/85] Building CXX object CMakeFiles/DeliHub.dir/src/services/notification_service.cpp.obj
+[39/85] Building CXX object CMakeFiles/DeliHub.dir/src/infra/logger.cpp.obj
+[40/85] Building CXX object CMakeFiles/DeliHub.dir/src/infra/schema_deployer.cpp.obj
+[41/85] Building CXX object CMakeFiles/DeliHub.dir/src/infra/backup_manager.cpp.obj
+[42/85] Building CXX object CMakeFiles/DeliHub.dir/src/services/audit_service.cpp.obj
+[43/85] Building CXX object CMakeFiles/DeliHub.dir/src/services/auth_service.cpp.obj
+[44/85] Building CXX object CMakeFiles/DeliHub.dir/src/infra/config_manager.cpp.obj
+[45/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/products/product_table_model.cpp.obj
+[46/85] Building CXX object CMakeFiles/DeliHub.dir/src/services/scheduling_service.cpp.obj
+[47/85] Building CXX object CMakeFiles/DeliHub.dir/src/infra/database_connection_manager.cpp.obj
+[48/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/products/missing_product_dialog.cpp.obj
+[49/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/products/product_quick_edit_dialog.cpp.obj
+[50/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/orders/order_table_model.cpp.obj
+[51/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/customers/customer_table_model.cpp.obj
+[52/85] Building CXX object CMakeFiles/DeliHub.dir/src/services/archive_manager.cpp.obj
+[53/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/products/product_dialog.cpp.obj
+[54/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/customers/customer_dialog.cpp.obj
+[55/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/scheduled_orders/scheduled_order_dialog.cpp.obj
+[56/85] Building CXX object CMakeFiles/DeliHub.dir/src/services/order_service.cpp.obj
+[57/85] Building CXX object CMakeFiles/DeliHub.dir/src/services/session_manager.cpp.obj
+[58/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/main_window.cpp.obj
+[59/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/orders/order_dialog.cpp.obj
+[60/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/scheduled_orders/scheduled_orders_page.cpp.obj
+[61/85] Building CXX object CMakeFiles/DeliHub.dir/src/services/theme_manager.cpp.obj
+[62/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/notifications_panel.cpp.obj
+[63/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/intro_splash.cpp.obj
+[64/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/orders/orders_page.cpp.obj
+[65/85] Building CXX object CMakeFiles/DeliHub.dir/src/infra/auto_backup_scheduler.cpp.obj
+[66/85] Building CXX object CMakeFiles/DeliHub.dir/src/services/branch_manager.cpp.obj
+[67/85] Building CXX object CMakeFiles/DeliHub.dir/DeliHub_autogen/mocs_compilation.cpp.obj
+[68/85] Building CXX object CMakeFiles/DeliHub.dir/src/services/lang_manager.cpp.obj
+[69/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/products/products_page.cpp.obj
+[70/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/customers/customers_page.cpp.obj
+[71/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/pagination_bar.cpp.obj
+[72/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/dashboard/charts_widget.cpp.obj
+[73/85] Building CXX object CMakeFiles/DeliHub.dir/src/main.cpp.obj
+[74/85] Building CXX object CMakeFiles/DeliHub.dir/src/services/invoice_generator.cpp.obj
+[75/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/login/login_dialog.cpp.obj
+[76/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/coupons/coupons_page.cpp.obj
+[77/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/reports/reports_page.cpp.obj
+[78/85] Building CXX object CMakeFiles/DeliHub.dir/src/data/access_repositories.cpp.obj
+[79/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/users/users_page.cpp.obj
+[80/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/settings/settings_page.cpp.obj
+[81/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/dashboard/dashboard_page.cpp.obj
+[82/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/audit_log/audit_log_page.cpp.obj
+[83/85] Building CXX object CMakeFiles/DeliHub.dir/src/data/sqlite_repositories.cpp.obj
+[84/85] Building CXX object CMakeFiles/DeliHub.dir/src/ui/returns/returns_page.cpp.obj
+[85/85] Linking CXX executable DeliHub.exe; Deploying DeliHub to E:/tifany/dist...
+Step 1: Creating clean dist directory...
+Step 2: Copying DeliHub.exe...
+Step 3: Running windeployqt...
+Warning: Translations will not be available due to the following error.
+Cannot open C:/msys64/ucrt64/share/qt6/translations/catalogs.json
+E:\tifany\dist\DeliHub.exe 64 bit, release executable
+Adding in plugin type generic for module: Qt6Gui
+Adding in plugin type imageformats for module: Qt6Gui
+Adding in plugin type multimedia for module: Qt6Multimedia
+Adding in plugin type networkinformation for module: Qt6Network
+Adding in plugin type platforms for module: Qt6Gui
+Adding in plugin type sqldrivers for module: Qt6Sql
+Adding in plugin type styles for module: Qt6Widgets
+Adding in plugin type tls for module: Qt6Network
+Skipping plugin qopensslbackend.dll. Use -force-openssl or specify -openssl-root if you want to use it.
+Direct dependencies: Qt6Charts Qt6Core Qt6Gui Qt6Multimedia Qt6MultimediaWidgets Qt6Network Qt6OpenGL Qt6OpenGLWidgets Qt6PrintSupport Qt6Sql Qt6Widgets
+All dependencies   : Qt6Charts Qt6Core Qt6Gui Qt6Multimedia Qt6MultimediaWidgets Qt6Network Qt6OpenGL Qt6OpenGLWidgets Qt6PrintSupport Qt6Sql Qt6Widgets
+To be deployed     : Qt6Charts Qt6Core Qt6Gui Qt6Multimedia Qt6MultimediaWidgets Qt6Network Qt6OpenGL Qt6OpenGLWidgets Qt6PrintSupport Qt6Sql Qt6Widgets
+Warning: Cannot find any version of the dxcompiler.dll and dxil.dll. This is not a problem unless Direct3D 12 and certain features are used by the application.
+Updating Qt6Charts.dll.
+Updating Qt6Core.dll.
+Updating Qt6Gui.dll.
+Updating Qt6Multimedia.dll.
+Updating Qt6MultimediaWidgets.dll.
+Updating Qt6Network.dll.
+Updating Qt6OpenGL.dll.
+Updating Qt6OpenGLWidgets.dll.
+Updating Qt6PrintSupport.dll.
+Updating Qt6Sql.dll.
+Updating Qt6Widgets.dll.
+Skipping system library C:/Windows/system32/D3Dcompiler_47.dll
+Updating avcodec-62.dll.
+Updating avformat-62.dll.
+Updating avutil-60.dll.
+Updating swresample-6.dll.
+Updating swscale-9.dll.
+Creating directory E:/tifany/dist/generic.
+Updating qtuiotouchplugin.dll.
+Creating directory E:/tifany/dist/imageformats.
+Updating qgif.dll.
+Updating qico.dll.
+Updating qjpeg.dll.
+Creating directory E:/tifany/dist/multimedia.
+Updating ffmpegmediaplugin.dll.
+Creating directory E:/tifany/dist/networkinformation.
+Updating qglib.dll.
+Updating qnetworklistmanager.dll.
+Creating directory E:/tifany/dist/platforms.
+Updating qwindows.dll.
+Creating directory E:/tifany/dist/sqldrivers.
+Updating qsqlibase.dll.
+Updating qsqlite.dll.
+Updating qsqlmysql.dll.
+Updating qsqlodbc.dll.
+Updating qsqlpsql.dll.
+Creating directory E:/tifany/dist/styles.
+Updating qmodernwindowsstyle.dll.
+Creating directory E:/tifany/dist/tls.
+Updating qcertonlybackend.dll.
+Updating qschannelbackend.dll.
+Creating E:\tifany\dist\translations...
+Warning: Could not find any translations in C:\msys64\ucrt64\share\qt6\translations (developer build?)
+.Step 4: Copying runtime assets...
+Step 5: Copying MSYS2 UCRT64 dependencies...
+Deployment complete: E:/tifany/dist
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+DeliHub deployment package created successfully!
+Location: E:/tifany/dist
+To create installer, run: iscc installer\DeliHub_setup.iss
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ

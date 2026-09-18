@@ -1,0 +1,111 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Git attributes for DeliHub
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Auto detect text files and normalize line endings to LF in repository
+* text=auto
+
+# Source code
+*.cpp text eol=lf
+*.h text eol=lf
+*.c text eol=lf
+*.hpp text eol=lf
+*.cc text eol=lf
+*.cxx text eol=lf
+
+# CMake
+*.cmake text eol=lf
+CMakeLists.txt text eol=lf
+
+# SQL scripts
+*.sql text eol=lf
+
+# Scripts
+*.sh text eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Configuration
+*.ini text eol=lf
+*.conf text eol=lf
+*.config text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Documentation
+*.md text eol=lf
+*.txt text eol=lf
+*.rst text eol=lf
+
+# Qt
+*.qrc text eol=lf
+*.ui text eol=lf
+*.qml text eol=lf
+*.qss text eol=lf
+
+# Graphics (binary)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text eol=lf
+*.webp binary
+*.bmp binary
+
+# Archives (binary)
+*.zip binary
+*.7z binary
+*.tar binary
+*.gz binary
+*.rar binary
+
+# Libraries (binary)
+*.dll binary
+*.so binary
+*.dylib binary
+*.a binary
+*.lib binary
+
+# Executables (binary)
+*.exe binary
+
+# Media (binary)
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.mp3 binary
+*.wav binary
+*.ogg binary
+
+# Office files (binary)
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+*.pdf binary
+
+# Database files (binary)
+*.db binary
+*.sqlite binary
+*.sqlite3 binary
+*.accdb binary
+*.mdb binary
+
+# Git keeps these untouched
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Diff settings for specific files
+*.cpp diff=cpp
+*.h diff=cpp
+*.c diff=cpp
+*.cmake diff
+*.sql diff
+*.md diff=markdown
+*.json diff

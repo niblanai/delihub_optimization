@@ -1,0 +1,232 @@
+Inno Setup 6 Command-Line Compiler
+Copyright (C) 1997-2026 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2026 Martijn Laan. All rights reserved.
+Portions Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+https://www.innosetup.com
+
+Compiler engine version: Inno Setup 6.7.3
+Non-commercial use only
+
+Preprocessing
+   Reading file: C:\Users\Hoam Hasan\AppData\Local\Programs\Inno Setup 6\ISPPBuiltins.iss
+Parsing [Setup] section, line 15
+Parsing [Setup] section, line 16
+Parsing [Setup] section, line 17
+Parsing [Setup] section, line 18
+Parsing [Setup] section, line 19
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Parsing [Setup] section, line 24
+Parsing [Setup] section, line 25
+Parsing [Setup] section, line 26
+Parsing [Setup] section, line 29
+Parsing [Setup] section, line 30
+Parsing [Setup] section, line 31
+Parsing [Setup] section, line 34
+Parsing [Setup] section, line 35
+Parsing [Setup] section, line 38
+Parsing [Setup] section, line 39
+Parsing [Setup] section, line 42
+Parsing [Setup] section, line 43
+Parsing [Setup] section, line 46
+Parsing [Setup] section, line 47
+Parsing [Setup] section, line 50
+Parsing [Setup] section, line 51
+Parsing [Setup] section, line 52
+Parsing [Setup] section, line 53
+Parsing [Setup] section, line 54
+Parsing [Setup] section, line 57
+Reading file (WizardImageFile)
+Reading file (WizardSmallImageFile)
+Preparing Setup program executable
+   Verification successful
+   Updating icons (Setup.e32)
+   Updating version info (Setup.e32)
+Determining language code pages
+Parsing [Languages] section, line 60
+   Reading file: C:\Users\Hoam Hasan\AppData\Local\Programs\Inno Setup 6\Default.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [Languages] section, line 60
+   Reading file: C:\Users\Hoam Hasan\AppData\Local\Programs\Inno Setup 6\Default.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   Messages in script file
+Reading [Code] section
+Parsing [Tasks] section, line 63
+Parsing [Icons] section, line 92
+Parsing [Icons] section, line 93
+Parsing [Icons] section, line 94
+Parsing [UninstallDelete] section, line 162
+Parsing [UninstallDelete] section, line 163
+Parsing [UninstallDelete] section, line 164
+Parsing [UninstallDelete] section, line 165
+Parsing [UninstallDelete] section, line 166
+Parsing [Run] section, line 97
+Parsing [Files] section, line 67
+Parsing [Files] section, line 70
+Parsing [Files] section, line 73
+Parsing [Files] section, line 74
+Parsing [Files] section, line 75
+Parsing [Files] section, line 76
+Parsing [Files] section, line 77
+Parsing [Files] section, line 78
+Parsing [Files] section, line 79
+Parsing [Files] section, line 80
+Parsing [Files] section, line 85
+Parsing [Files] section, line 86
+Parsing [Files] section, line 87
+Parsing [Files] section, line 88
+Parsing [Files] section, line 89
+Compiling [Code] section
+Deleting DeliHub_v1.0.0_Setup.exe from output directory
+Creating setup files
+   Verification successful
+   Updating icons (Setup.exe)
+   Compressing: e:\tifany\installer\..\dist\DeliHub.exe
+   Compressing: e:\tifany\installer\..\dist\avcodec-62.dll
+   Compressing: e:\tifany\installer\..\dist\avformat-62.dll
+   Compressing: e:\tifany\installer\..\dist\avutil-60.dll
+   Compressing: e:\tifany\installer\..\dist\libaom.dll
+   Compressing: e:\tifany\installer\..\dist\libb2-1.dll
+   Compressing: e:\tifany\installer\..\dist\libbluray-3.dll
+   Compressing: e:\tifany\installer\..\dist\libbrotlicommon.dll
+   Compressing: e:\tifany\installer\..\dist\libbrotlidec.dll
+   Compressing: e:\tifany\installer\..\dist\libbrotlienc.dll
+   Compressing: e:\tifany\installer\..\dist\libbz2-1.dll
+   Compressing: e:\tifany\installer\..\dist\libcairo-2.dll
+   Compressing: e:\tifany\installer\..\dist\libcairo-gobject-2.dll
+   Compressing: e:\tifany\installer\..\dist\libcrypto-3-x64.dll
+   Compressing: e:\tifany\installer\..\dist\libdatrie-1.dll
+   Compressing: e:\tifany\installer\..\dist\libdav1d-7.dll
+   Compressing: e:\tifany\installer\..\dist\libdeflate.dll
+   Compressing: e:\tifany\installer\..\dist\libdouble-conversion.dll
+   Compressing: e:\tifany\installer\..\dist\libexpat-1.dll
+   Compressing: e:\tifany\installer\..\dist\libffi-8.dll
+   Compressing: e:\tifany\installer\..\dist\libfontconfig-1.dll
+   Compressing: e:\tifany\installer\..\dist\libfreetype-6.dll
+   Compressing: e:\tifany\installer\..\dist\libfribidi-0.dll
+   Compressing: e:\tifany\installer\..\dist\libgcc_s_seh-1.dll
+   Compressing: e:\tifany\installer\..\dist\libgdk_pixbuf-2.0-0.dll
+   Compressing: e:\tifany\installer\..\dist\libgio-2.0-0.dll
+   Compressing: e:\tifany\installer\..\dist\libglib-2.0-0.dll
+   Compressing: e:\tifany\installer\..\dist\libgme.dll
+   Compressing: e:\tifany\installer\..\dist\libgmodule-2.0-0.dll
+   Compressing: e:\tifany\installer\..\dist\libgmp-10.dll
+   Compressing: e:\tifany\installer\..\dist\libgnutls-30.dll
+   Compressing: e:\tifany\installer\..\dist\libgobject-2.0-0.dll
+   Compressing: e:\tifany\installer\..\dist\libgomp-1.dll
+   Compressing: e:\tifany\installer\..\dist\libgraphite2.dll
+   Compressing: e:\tifany\installer\..\dist\libgsm.dll
+   Compressing: e:\tifany\installer\..\dist\libharfbuzz-0.dll
+   Compressing: e:\tifany\installer\..\dist\libhogweed-6.dll
+   Compressing: e:\tifany\installer\..\dist\libhwy.dll
+   Compressing: e:\tifany\installer\..\dist\libiconv-2.dll
+   Compressing: e:\tifany\installer\..\dist\libicudt78.dll
+   Compressing: e:\tifany\installer\..\dist\libicuin78.dll
+   Compressing: e:\tifany\installer\..\dist\libicuuc78.dll
+   Compressing: e:\tifany\installer\..\dist\libidn2-0.dll
+   Compressing: e:\tifany\installer\..\dist\libintl-8.dll
+   Compressing: e:\tifany\installer\..\dist\libjbig-0.dll
+   Compressing: e:\tifany\installer\..\dist\libjpeg-8.dll
+   Compressing: e:\tifany\installer\..\dist\libjxl.dll
+   Compressing: e:\tifany\installer\..\dist\libjxl_cms.dll
+   Compressing: e:\tifany\installer\..\dist\libjxl_threads.dll
+   Compressing: e:\tifany\installer\..\dist\liblc3-1.dll
+   Compressing: e:\tifany\installer\..\dist\liblcms2-2.dll
+   Compressing: e:\tifany\installer\..\dist\libLerc.dll
+   Compressing: e:\tifany\installer\..\dist\liblzma-5.dll
+   Compressing: e:\tifany\installer\..\dist\libmd4c.dll
+   Compressing: e:\tifany\installer\..\dist\libmodplug-1.dll
+   Compressing: e:\tifany\installer\..\dist\libmp3lame-0.dll
+   Compressing: e:\tifany\installer\..\dist\libnettle-8.dll
+   Compressing: e:\tifany\installer\..\dist\libogg-0.dll
+   Compressing: e:\tifany\installer\..\dist\libopencore-amrnb-0.dll
+   Compressing: e:\tifany\installer\..\dist\libopencore-amrwb-0.dll
+   Compressing: e:\tifany\installer\..\dist\libopenjp2-7.dll
+   Compressing: e:\tifany\installer\..\dist\libopus-0.dll
+   Compressing: e:\tifany\installer\..\dist\libp11-kit-0.dll
+   Compressing: e:\tifany\installer\..\dist\libpango-1.0-0.dll
+   Compressing: e:\tifany\installer\..\dist\libpangocairo-1.0-0.dll
+   Compressing: e:\tifany\installer\..\dist\libpangoft2-1.0-0.dll
+   Compressing: e:\tifany\installer\..\dist\libpangowin32-1.0-0.dll
+   Compressing: e:\tifany\installer\..\dist\libpcre2-16-0.dll
+   Compressing: e:\tifany\installer\..\dist\libpcre2-8-0.dll
+   Compressing: e:\tifany\installer\..\dist\libpixman-1-0.dll
+   Compressing: e:\tifany\installer\..\dist\libpng16-16.dll
+   Compressing: e:\tifany\installer\..\dist\libpq.dll
+   Compressing: e:\tifany\installer\..\dist\librav1e.dll
+   Compressing: e:\tifany\installer\..\dist\librsvg-2-2.dll
+   Compressing: e:\tifany\installer\..\dist\librtmp-1.dll
+   Compressing: e:\tifany\installer\..\dist\libshaderc_shared.dll
+   Compressing: e:\tifany\installer\..\dist\libsharpyuv-0.dll
+   Compressing: e:\tifany\installer\..\dist\libsoxr.dll
+   Compressing: e:\tifany\installer\..\dist\libspeex-1.dll
+   Compressing: e:\tifany\installer\..\dist\libsqlite3-0.dll
+   Compressing: e:\tifany\installer\..\dist\libsrt.dll
+   Compressing: e:\tifany\installer\..\dist\libssh.dll
+   Compressing: e:\tifany\installer\..\dist\libssl-3-x64.dll
+   Compressing: e:\tifany\installer\..\dist\libstdc++-6.dll
+   Compressing: e:\tifany\installer\..\dist\libSvtAv1Enc-4.dll
+   Compressing: e:\tifany\installer\..\dist\libtasn1-6.dll
+   Compressing: e:\tifany\installer\..\dist\libthai-0.dll
+   Compressing: e:\tifany\installer\..\dist\libtheoradec-2.dll
+   Compressing: e:\tifany\installer\..\dist\libtheoraenc-2.dll
+   Compressing: e:\tifany\installer\..\dist\libtiff-6.dll
+   Compressing: e:\tifany\installer\..\dist\libunistring-5.dll
+   Compressing: e:\tifany\installer\..\dist\libva.dll
+   Compressing: e:\tifany\installer\..\dist\libva_win32.dll
+   Compressing: e:\tifany\installer\..\dist\libvorbis-0.dll
+   Compressing: e:\tifany\installer\..\dist\libvorbisenc-2.dll
+   Compressing: e:\tifany\installer\..\dist\libvpl-2.dll
+   Compressing: e:\tifany\installer\..\dist\libvpx-1.dll
+   Compressing: e:\tifany\installer\..\dist\libwebp-7.dll
+   Compressing: e:\tifany\installer\..\dist\libwebpmux-3.dll
+   Compressing: e:\tifany\installer\..\dist\libwinpthread-1.dll
+   Compressing: e:\tifany\installer\..\dist\libx264-165.dll
+   Compressing: e:\tifany\installer\..\dist\libx265-216.dll
+   Compressing: e:\tifany\installer\..\dist\libxml2-16.dll
+   Compressing: e:\tifany\installer\..\dist\libzstd.dll
+   Compressing: e:\tifany\installer\..\dist\libzvbi-0.dll
+   Compressing: e:\tifany\installer\..\dist\Qt6Charts.dll
+   Compressing: e:\tifany\installer\..\dist\Qt6Core.dll
+   Compressing: e:\tifany\installer\..\dist\Qt6Gui.dll
+   Compressing: e:\tifany\installer\..\dist\Qt6Multimedia.dll
+   Compressing: e:\tifany\installer\..\dist\Qt6MultimediaWidgets.dll
+   Compressing: e:\tifany\installer\..\dist\Qt6Network.dll
+   Compressing: e:\tifany\installer\..\dist\Qt6OpenGL.dll
+   Compressing: e:\tifany\installer\..\dist\Qt6OpenGLWidgets.dll
+   Compressing: e:\tifany\installer\..\dist\Qt6PrintSupport.dll
+   Compressing: e:\tifany\installer\..\dist\Qt6Sql.dll
+   Compressing: e:\tifany\installer\..\dist\Qt6Widgets.dll
+   Compressing: e:\tifany\installer\..\dist\swresample-6.dll
+   Compressing: e:\tifany\installer\..\dist\swscale-9.dll
+   Compressing: e:\tifany\installer\..\dist\xvidcore.dll
+   Compressing: e:\tifany\installer\..\dist\zlib1.dll
+   Compressing: e:\tifany\installer\..\dist\generic\qtuiotouchplugin.dll
+   Compressing: e:\tifany\installer\..\dist\imageformats\qgif.dll
+   Compressing: e:\tifany\installer\..\dist\imageformats\qico.dll
+   Compressing: e:\tifany\installer\..\dist\imageformats\qjpeg.dll
+   Compressing: e:\tifany\installer\..\dist\multimedia\ffmpegmediaplugin.dll
+   Compressing: e:\tifany\installer\..\dist\networkinformation\qglib.dll
+   Compressing: e:\tifany\installer\..\dist\networkinformation\qnetworklistmanager.dll
+   Compressing: e:\tifany\installer\..\dist\platforms\qwindows.dll
+   Compressing: e:\tifany\installer\..\dist\sqldrivers\qsqlibase.dll
+   Compressing: e:\tifany\installer\..\dist\sqldrivers\qsqlite.dll
+   Compressing: e:\tifany\installer\..\dist\sqldrivers\qsqlmysql.dll
+   Compressing: e:\tifany\installer\..\dist\sqldrivers\qsqlodbc.dll
+   Compressing: e:\tifany\installer\..\dist\sqldrivers\qsqlpsql.dll
+   Compressing: e:\tifany\installer\..\dist\styles\qmodernwindowsstyle.dll
+   Compressing: e:\tifany\installer\..\dist\tls\qcertonlybackend.dll
+   Compressing: e:\tifany\installer\..\dist\tls\qschannelbackend.dll
+   Compressing: e:\tifany\installer\..\dist\intro.mp4
+   Compressing: e:\tifany\installer\..\dist\logo.png
+   Compressing: e:\tifany\installer\..\dist\config.ini
+   Compressing: e:\tifany\installer\..\dist\qt.conf
+   Compressing: e:\tifany\installer\..\dist\ca-certificates.crt
+   Compressing Setup program executable
+   Updating version info (Setup.exe)
+   Updating manifest (Setup.exe)
+
+
+Successful compile (75.875 sec). Resulting Setup program filename is:
+e:\tifany\installer_output\DeliHub_v1.0.0_Setup.exe

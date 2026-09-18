@@ -1,0 +1,1 @@
+qt.sql.qsqldatabase: QSqlDatabasePrivate::removeDatabase: connection 'diag' is still in use, all queries will cease to work.
